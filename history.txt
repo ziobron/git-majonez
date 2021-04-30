@@ -1,0 +1,42 @@
+  483  ls
+  484  mkdir git-majonez
+  485  cd git-majonez/
+  486  touch main.cpp
+  487  vim main.cpp 
+  488  g++ main.cpp 
+  489  ./a.out 
+  490  git init
+  491  git add main.cpp 
+  492  git commit -m"Initial commit"
+  493  vim main.cpp 
+  494  git add main.cpp 
+  495  git commit -m"Farewell changed"
+  496  git remote add origin https://github.com/ziobron/git-majonez.git
+  497  git push -u origin master
+  498  git log --oneline
+  499  cd workspace/git-majonez/
+  500  git status
+  501  rm a.out 
+  502  history
+  503  git checkout -b cs
+  504  git reset --hard HEAD^
+  505  git log
+  506  vim main.cpp 
+  507  git add .
+  508  git status
+  509  git commit -m"Greetings"
+  510  git push 
+  511  git push origin cs
+  512  git checkout master
+  513  git log
+  514  git merge cs
+  515  vim main.cpp 
+  516  git status
+  517  git commit
+  518  git add .
+  519  git commit
+  520  history
+  521  bc < 520 -484
+  522  echo 520 - 484 | bc
+  523  history | tail -n 38
+  524  history | tail -n 42 > history.txt
